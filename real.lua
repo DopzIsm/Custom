@@ -39,11 +39,7 @@ end
 
 
 local chromaColor
-spawn(function()
-	while library and wait() do
-		chromaColor = Color3.fromHSV(tick() % 6 / 6, 1, 1)
-	end
-end)
+
 
 function library:Create(class, properties)
 	properties = properties or {}
@@ -291,7 +287,7 @@ library.createToggle = function(option, parent)
 			Size = UDim2.new(1, 0, 1, 0),
 			BackgroundTransparency = 1,
 			Image = "rbxassetid://5941353943",
-			ImageTransparency = 0,
+			ImageTransparency = 0.6,
 			Parent = tickbox
 		})
 
@@ -311,7 +307,7 @@ library.createToggle = function(option, parent)
 			BackgroundColor3 = Color3.fromRGB(50, 50, 50),
 			BorderColor3 = Color3.new(),
 			Image = "rbxassetid://4155801252",
-			ImageTransparency = 0,
+			ImageTransparency = 0.6,
 			ImageColor3 = Color3.new(),
 			Parent = tickbox
 		})
@@ -665,7 +661,7 @@ library.createSlider = function(option, parent)
 		BackgroundTransparency = 1,
 		Image = "rbxassetid://2454009026",
 		ImageColor3 = Color3.new(),
-		ImageTransparency = 0,
+		ImageTransparency = 0.8,
 		Parent = option.slider
 	})
 
@@ -866,7 +862,7 @@ library.createList = function(option, parent)
 		BackgroundTransparency = 1,
 		Image = "rbxassetid://2454009026",
 		ImageColor3 = Color3.new(),
-		ImageTransparency = 0,
+		ImageTransparency = 0.8,
 		Parent = option.listvalue
 	})
 
@@ -899,7 +895,7 @@ library.createList = function(option, parent)
 		Image = "rbxassetid://4918373417",
 		ImageColor3 = Color3.new(1, 1, 1),
 		ScaleType = Enum.ScaleType.Fit,
-		ImageTransparency = 0,
+		ImageTransparency = 0.4,
 		Parent = option.listvalue
 	})
 
@@ -1192,7 +1188,7 @@ library.createBox = function(option, parent)
 		BackgroundTransparency = 1,
 		Image = "rbxassetid://2454009026",
 		ImageColor3 = Color3.new(),
-		ImageTransparency = 0,
+		ImageTransparency = 0.8,
 		Parent = option.holder
 	})
 
@@ -1315,7 +1311,7 @@ library.createColorPickerWindow = function(option)
 		BackgroundTransparency = 1,
 		Image = "rbxassetid://2454009026",
 		ImageColor3 = Color3.new(),
-		ImageTransparency = 0,
+		ImageTransparency = 0.8,
 		ZIndex = 6;
 		Parent = option.rgbBox
 	})
@@ -1626,7 +1622,7 @@ library.createColor = function(option, parent)
 		BackgroundTransparency = 1,
 		Image = "rbxassetid://2454009026",
 		ImageColor3 = Color3.new(),
-		ImageTransparency = 0,
+		ImageTransparency = 0.6,
 		Parent = option.visualize
 	})
 
@@ -2343,7 +2339,7 @@ function library:AddWarning(warning)
 					BackgroundTransparency = 1,
 					Image = "rbxassetid://2454009026",
 					ImageColor3 = Color3.new(),
-					ImageTransparency = 0,
+					ImageTransparency = 0.8,
 					Parent = button
 				})
 
@@ -2377,7 +2373,7 @@ function library:AddWarning(warning)
 					BackgroundTransparency = 1,
 					Image = "rbxassetid://2454009026",
 					ImageColor3 = Color3.new(),
-					ImageTransparency = 0,
+					ImageTransparency = 0.8,
 					Parent = button1
 				})
 
@@ -2423,7 +2419,7 @@ function library:AddWarning(warning)
 					BackgroundTransparency = 1,
 					Image = "rbxassetid://2454009026",
 					ImageColor3 = Color3.new(),
-					ImageTransparency = 0,
+					ImageTransparency = 0.8,
 					Parent = button
 				})
 
@@ -2532,7 +2528,7 @@ function library:Init()
 		BackgroundTransparency = 1,
 		Image = "rbxassetid://2454009026",
 		ImageColor3 = Color3.new(),
-		ImageTransparency = 0,
+		ImageTransparency = 0.4,
 		Parent = top
 	})
 
